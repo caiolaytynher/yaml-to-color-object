@@ -5,7 +5,7 @@ INPUT_DIR = "./yaml-files"
 OUTPUT_DIR = "./output-files"
 
 
-def main(args) -> None:
+def main(args: list[str]) -> None:
     if len(args) > 1:
         filename: str = args[1]
     else:

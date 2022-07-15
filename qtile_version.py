@@ -19,6 +19,8 @@ def main(args: list[str]) -> None:
         for color_type, color_contents in color_pallete.items():
             output_file.write(f"\t{color_type}={color_type.capitalize()}(\n")
             for color_name, color_hex in color_contents.items():
+                if color_hex.startswith("0x"):
+                    color_hex = f"#{color_hex[2:]}"
                 output_file.write(f"\t\t{color_name}=[{color_hex!r}, {color_hex!r}],\n")
             output_file.write(f"\t),\n")
         output_file.write(")")

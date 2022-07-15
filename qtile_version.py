@@ -14,7 +14,7 @@ def main(args: list[str]) -> None:
     with open(f"{INPUT_DIR}/{filename}.yaml", "r") as input_file:
         color_pallete: dict = yaml.safe_load(input_file)
 
-    with open(f"{OUTPUT_DIR}/{filename}.txt", "w") as output_file:
+    with open(f"{OUTPUT_DIR}/qtile-{filename}.txt", "w") as output_file:
         output_file.write(f"ColorScheme(\n")
         for color_type, color_contents in color_pallete.items():
             output_file.write(f"\t{color_type}={color_type.capitalize()}(\n")

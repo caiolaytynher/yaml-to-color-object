@@ -1,0 +1,30 @@
+ColorScheme(
+	primary=Primary(
+		background_darker=['#191A21', '#191A21'],
+		background_dark=['#21222C', '#21222C'],
+		background=['#282a36', '#282a36'],
+		background_light=['#343746', '#343746'],
+		background_lighter=['#424450', '#424450'],
+		foreground=['#f8f8f2', '#f8f8f2'],
+	),
+	normal=Normal(
+		black=['#21222c', '#21222c'],
+		red=['#ff5555', '#ff5555'],
+		green=['#50fa7b', '#50fa7b'],
+		yellow=['#f1fa8c', '#f1fa8c'],
+		blue=['#bd93f9', '#bd93f9'],
+		magenta=['#ff79c6', '#ff79c6'],
+		cyan=['#8be9fd', '#8be9fd'],
+		white=['#f8f8f2', '#f8f8f2'],
+	),
+	bright=Bright(
+		black=['#6272a4', '#6272a4'],
+		red=['#ff6e6e', '#ff6e6e'],
+		green=['#69ff94', '#69ff94'],
+		yellow=['#ffffa5', '#ffffa5'],
+		blue=['#d6acff', '#d6acff'],
+		magenta=['#ff92df', '#ff92df'],
+		cyan=['#a4ffff', '#a4ffff'],
+		white=['#ffffff', '#ffffff'],
+	),
+)

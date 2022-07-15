@@ -1,4 +1,4 @@
-# Yaml to object
+# Yaml to color object
 
 This is a project created with make my life easier in mind. The
 base purpose is to convert a yaml file into a specific python

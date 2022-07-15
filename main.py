@@ -12,23 +12,15 @@ def main(args) -> None:
         raise Exception("No file name provided.")
 
     with open(f"{INPUT_DIR}/{filename}.yaml", "r") as input_file:
-        contents: dict = yaml.safe_load(input_file)
-
-    """
-    person:
-        name: "Caio"
-        age: 21
-
-    Person(
-        name="Caio"
-        age=21
-    )
-    """
+        color_pallete: dict = yaml.safe_load(input_file)
 
     with open(f"{OUTPUT_DIR}/{filename}.txt", "w") as output_file:
-        output_file.write(f"{filename}(\n")
-        for key, value in contents.items():
-            output_file.write(f"\t{key}={value!r}\n")
+        output_file.write(f"ColorScheme(\n")
+        for color_type, color_contents in color_pallete.items():
+            output_file.write(f"\t{color_type}={color_type.capitalize()}(\n")
+            for color_name, color_hex in color_contents.items():
+                output_file.write(f"\t\t{color_name}={color_hex!r},\n")
+            output_file.write(f"\t),\n")
         output_file.write(")")
 
 
